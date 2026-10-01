@@ -1,0 +1,39 @@
+# Dataset
+dataset/**
+!dataset/.gitkeep
+
+# Kaggle credentials
+kaggle.json
+.kaggle/
+
+# Model files (remove this line if your best model is small enough for GitHub)
+models/*.keras
+models/*.h5
+
+# Keep the training history / evaluation JSON (small files)
+!models/training_history.json
+!models/evaluation_results.json
+!models/class_indices.json
+
+# Uploaded images from the Flask app
+static/uploads/*
+!static/uploads/.gitkeep
+
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+.eggs/
+
+# Virtual environment
+venv/
+.venv/
+env/
+
+# OS / editor junk
+.DS_Store
+.vscode/
+*.log
+
+# Jupyter
+.ipynb_checkpoints/
