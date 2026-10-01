@@ -76,57 +76,34 @@ This project aims to develop an automated deepfake detection system that can ana
 
 
 
-\## System Architecture
 
 
+## System Architecture
 
 ```text
-
 Kaggle Dataset
-
-&#x20;     ↓
-
+      ↓
 Dataset Download
-
-&#x20;     ↓
-
+      ↓
 Data Preprocessing
-
-&#x20;     ↓
-
+      ↓
 Image Augmentation
-
-&#x20;     ↓
-
+      ↓
 Xception Transfer Learning
-
-&#x20;     ↓
-
+      ↓
 Model Training
-
-&#x20;     ↓
-
+      ↓
 Best Model Checkpoint
-
-&#x20;     ↓
-
-&#x20;┌───────────────┐
-
-&#x20;↓               ↓
-
+      ↓
+   ┌───────────────┐
+   ↓               ↓
 Evaluation      Prediction
-
-&#x20;↓               ↓
-
-Metrics          REAL / FAKE
-
-&#x20;↓               ↓
-
-Plots            Confidence
-
-&#x20;     \\          /
-
-&#x20;      ↓        ↓
-
-&#x20;      Flask Web App
+   ↓               ↓
+Metrics        REAL / FAKE
+   ↓               ↓
+Plots          Confidence
+   ↓               ↓
+   └───────┬───────┘
+           ↓
+     Flask Web App
 
